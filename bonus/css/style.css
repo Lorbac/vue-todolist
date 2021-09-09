@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.logo img {
+    margin-top: 30px;
+    height: 80px;
+}
+
+.add input[type=text], select {
+    width: 400px;
+    height: 35px;
+    border-radius: 10px;
+    margin: 20px 10px 0 0;
+    padding-left: 15px;
+}
+
+.add input:focus {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1pt 1pt 3pt 1pt;
+}
+
+.add button {
+    border-radius: 10px;
+    height: 35px;
+    width: 85px;
+}
+
+.list {
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+ul {
+    list-style: none;
+    width: 100%;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    padding: 8px 0;
+    position: relative;
+}
+
+li input[type=checkbox] {
+    position: absolute;
+    left: 150px;
+    appearance: none;
+    height: 15px;
+    width: 15px;
+    background-color: lightgray;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+li input[type=checkbox]::after {
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 17px;
+    display: none;
+    line-height: 15px;
+    text-align: center;
+}
+
+li input[type=checkbox]:hover {
+    background-color: green;
+}
+
+li input[type=checkbox]:checked {
+    background-color: green;
+}
+
+li input[type=checkbox]:checked:after {
+    display: block;
+}
+
+.fas {
+    cursor: pointer;
+}
+
+.bg-green {
+    background-color: green;
+}
+
+.bg-red {
+    background-color: red;
+}
